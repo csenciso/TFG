@@ -1,0 +1,138 @@
+intents:
+  - greet
+  - evaluate_identification_number
+  - evaluate_name
+  - evaluate_date_of_birth
+  - evaluate_site
+  - evaluate_character
+  - evaluate_radiation
+  - evaluate_associated_symptoms
+  - evaluate_exacerbating_relieving_factor
+  - evaluate_severity
+  - evaluate_allergy
+  - evaluate_illness
+  - evaluate_medication
+  - evaluate_cardio
+  - evaluate_neoplasm
+  - evaluate_toxic_habits
+  - confirm
+  - deny
+  - goodbye
+  - handover
+  - evaluate_toxic_habits_no
+  - evaluate_illness_no
+  - evaluate_neoplasm_no
+  - evaluate_cardio_no
+  - evaluate_medication_no
+  - evaluate_allergy_no
+  - evaluate_exacerbating_relieving_factor_no
+  - evaluate_associated_symptoms_no
+
+entities:
+  - identification_number
+  - user_name
+  - date
+  - site
+  - body_area
+  - type_of_pain
+  - character
+  - associated_symptoms
+  - duration
+  - exacerbating_relieving_factor
+  - severity
+  - allergy
+  - illness
+  - cardio
+  - medicine
+  - neoplasm
+  - confirmation
+  - toxic_habits
+  - relationship
+  - handover
+
+config:
+  store_entities_as_slots: true
+
+slots:
+  session:
+    type: text
+  identification_number:
+    type: text
+  user_name:
+    type: text
+  date:
+    type: text
+  site:
+    type: text
+  body_area:
+    type: text
+  type_of_pain:
+    type: text
+  character:
+    type: text
+  associated_symptoms:
+    type: text
+  duration:
+    type: text
+  exacerbating_relieving_factor:
+    type: text
+  medicine:
+    type: text
+  severity:
+    type: text
+  illness:
+    type: text
+  cardio:
+    type: text
+  neoplasm:
+    type: text
+  toxic_habits:
+    type: text
+  relationship:
+    type: text
+  requested_slot:
+    type: unfeaturized
+
+templates:
+  utter_ask_identification_number:
+    - "No te he entendido, ¿podrías repetirme tu número de su carnet de identidad?"
+  utter_ask_user_name:
+    - "¿Podrías decirme tu nombre otra vez, por favor?"
+  utter_ask_date:
+    - "¿Puedes repetir tu fecha de nacimiento?"
+
+
+requested_slot:
+  type: categorical
+  values:
+  - identification_number
+  - user_name
+  - date
+
+actions:
+  - actions.GreetAction
+  - actions.EvaluateIdentificationNumberAction
+  - actions.EvaluateNameAction
+  - actions.EvaluateDateOfBirthAction
+  - actions.EvaluateSiteAction
+  - actions.EvaluateCharacterAction
+  - actions.EvaluateRadiationAction
+  - actions.EvaluateLocationAction
+  - actions.EvaluateAssociatedSymptomsAction
+  - actions.EvaluateSleepAction
+  - actions.EvaluateFactorsAction
+  - actions.EvaluateSeverityAction
+  - actions.EvaluateAllergyAction
+  - actions.EvaluateMedicationAction
+  - actions.EvaluateCardioAction
+  - actions.EvaluateNeoplasmAction
+  - actions.EvaluateIllnessAction
+  - actions.EvaluateToxiHabitAction
+  - actions.HandOver
+
+
+
+
+
+
+

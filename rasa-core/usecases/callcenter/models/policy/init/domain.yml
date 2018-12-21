@@ -1,0 +1,186 @@
+action_factory: null
+action_names:
+- utter_greet_action
+- ask_name
+- ask_date_of_birth
+- ask_site
+- ask_character
+- ask_radiation
+- ask_location
+- ask_associated_symptoms
+- ask_night_pain
+- ask_exacerbating_relieving_factor
+- ask_severity
+- ask_allergy
+- ask_medication
+- ask_cardio
+- ask_neoplasm
+- ask_illness
+- ask_toxic_habits
+- goodbye
+- utter_handover
+actions:
+- actions.GreetAction
+- actions.EvaluateIdentificationNumberAction
+- actions.EvaluateNameAction
+- actions.EvaluateDateOfBirthAction
+- actions.EvaluateSiteAction
+- actions.EvaluateCharacterAction
+- actions.EvaluateRadiationAction
+- actions.EvaluateLocationAction
+- actions.EvaluateAssociatedSymptomsAction
+- actions.EvaluateSleepAction
+- actions.EvaluateFactorsAction
+- actions.EvaluateSeverityAction
+- actions.EvaluateAllergyAction
+- actions.EvaluateMedicationAction
+- actions.EvaluateCardioAction
+- actions.EvaluateNeoplasmAction
+- actions.EvaluateIllnessAction
+- actions.EvaluateToxiHabitAction
+- actions.HandOver
+config:
+  store_entities_as_slots: true
+entities:
+- identification_number
+- user_name
+- date
+- site
+- body_area
+- type_of_pain
+- character
+- associated_symptoms
+- duration
+- exacerbating_relieving_factor
+- severity
+- allergy
+- illness
+- cardio
+- medicine
+- neoplasm
+- confirmation
+- toxic_habits
+- relationship
+- handover
+intents:
+- evaluate_neoplasm_no:
+    use_entities: true
+- evaluate_exacerbating_relieving_factor_no:
+    use_entities: true
+- evaluate_medication:
+    use_entities: true
+- evaluate_site:
+    use_entities: true
+- evaluate_radiation:
+    use_entities: true
+- evaluate_identification_number:
+    use_entities: true
+- evaluate_neoplasm:
+    use_entities: true
+- evaluate_medication_no:
+    use_entities: true
+- evaluate_cardio_no:
+    use_entities: true
+- evaluate_exacerbating_relieving_factor:
+    use_entities: true
+- evaluate_associated_symptoms:
+    use_entities: true
+- evaluate_associated_symptoms_no:
+    use_entities: true
+- evaluate_allergy_no:
+    use_entities: true
+- evaluate_toxic_habits_no:
+    use_entities: true
+- deny:
+    use_entities: true
+- evaluate_date_of_birth:
+    use_entities: true
+- confirm:
+    use_entities: true
+- evaluate_name:
+    use_entities: true
+- handover:
+    use_entities: true
+- evaluate_character:
+    use_entities: true
+- evaluate_toxic_habits:
+    use_entities: true
+- greet:
+    use_entities: true
+- evaluate_allergy:
+    use_entities: true
+- evaluate_illness:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- evaluate_severity:
+    use_entities: true
+- evaluate_cardio:
+    use_entities: true
+- evaluate_illness_no:
+    use_entities: true
+slots:
+  associated_symptoms:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  body_area:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  cardio:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  character:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  date:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  duration:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  exacerbating_relieving_factor:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  identification_number:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  illness:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  medicine:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  neoplasm:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  relationship:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  requested_slot:
+    initial_value: null
+    type: rasa_core.slots.UnfeaturizedSlot
+  session:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  severity:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  site:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  toxic_habits:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  type_of_pain:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  user_name:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+templates:
+  utter_ask_date:
+  - text: ¿Puedes repetir tu fecha de nacimiento?
+  utter_ask_identification_number:
+  - text: No te he entendido, ¿podrías repetirme tu número de su carnet de identidad?
+  utter_ask_user_name:
+  - text: ¿Podrías decirme tu nombre otra vez, por favor?

@@ -1,0 +1,55 @@
+{
+  "action_fingerprints": {
+    "ask_allergy": {
+      "slots": [
+        "user_name"
+      ]
+    }, 
+    "ask_date_of_birth": {
+      "slots": [
+        "requested_slot"
+      ]
+    }, 
+    "ask_character": {
+      "slots": []
+    }, 
+    "ask_medication": {
+      "slots": []
+    }, 
+    "utter_greet_action": {
+      "slots": []
+    }, 
+    "ask_severity": {
+      "slots": []
+    }, 
+    "ask_name": {
+      "slots": [
+        "requested_slot"
+      ]
+    }, 
+    "utter_handover": {
+      "slots": []
+    }, 
+    "goodbye": {
+      "slots": []
+    }, 
+    "ask_site": {
+      "slots": [
+        "requested_slot"
+      ]
+    }, 
+    "action_listen": {
+      "slots": []
+    }
+  }, 
+  "policy_names": [
+    "rasa_core.policies.memoization.MemoizationPolicy", 
+    "rasa_core.policies.keras_policy.KerasPolicy"
+  ], 
+  "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble", 
+  "max_histories": [
+    4, 
+    4
+  ], 
+  "rasa_core": "0.10.3"
+}

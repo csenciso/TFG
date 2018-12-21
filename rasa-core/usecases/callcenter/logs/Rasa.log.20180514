@@ -1,0 +1,212 @@
+[2018-05-14 16:47:42,626+0200]  [UNDEFINED]  [Rasa]  [INFO]  STARTING MICROSERVICE
+[2018-05-14 16:47:56,930+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-14 16:47:56,931+0200]  [123234]  [Rasa]  [ERROR]  BadRequest  
+[2018-05-14 16:48:41,573+0200]  [UNDEFINED]  [Rasa]  [INFO]  STARTING MICROSERVICE
+[2018-05-14 16:48:59,532+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-14 16:48:59,533+0200]  [123234]  [Rasa]  [ERROR]  BadRequest  
+[2018-05-14 16:48:59,536+0200]  [123234]  [Rasa]  [DEBUG]  
+Traceback (most recent call last):
+  File "/Users/a.herrera.zurita/Desktop/rasa_core-master/usecases/repsol/rest.py", line 83, in hello
+    content = request.json
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/werkzeug/local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/wrappers.py", line 108, in json
+    return self.get_json()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/wrappers.py", line 162, in get_json
+    rv = self.on_json_loading_failed(e)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/wrappers.py", line 182, in on_json_loading_failed
+    raise BadRequest()
+BadRequest: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+
+[2018-05-14 16:50:30,090+0200]  [UNDEFINED]  [Rasa]  [INFO]  STARTING MICROSERVICE
+[2018-05-14 16:50:38,979+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-14 16:50:38,979+0200]  [123234]  [Rasa]  [ERROR]  NameError  global name 'json' is not defined
+[2018-05-14 16:50:38,980+0200]  [123234]  [Rasa]  [DEBUG]  
+Traceback (most recent call last):
+  File "/Users/a.herrera.zurita/Desktop/rasa_core-master/usecases/repsol/rest.py", line 86, in hello
+    logger.info(session, "Received user message with input: " + json.dumps(content))
+NameError: global name 'json' is not defined
+
+[2018-05-14 16:51:25,225+0200]  [UNDEFINED]  [Rasa]  [INFO]  STARTING MICROSERVICE
+[2018-05-14 16:51:32,852+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-14 16:51:32,853+0200]  [123234]  [Rasa]  [ERROR]  TypeError  coercing to Unicode: need string or buffer, Request found
+[2018-05-14 16:51:32,855+0200]  [123234]  [Rasa]  [DEBUG]  
+Traceback (most recent call last):
+  File "/Users/a.herrera.zurita/Desktop/rasa_core-master/usecases/repsol/rest.py", line 87, in hello
+    logger.info(session, "Received user message with input: " + content)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/werkzeug/local.py", line 408, in <lambda>
+    __radd__ = lambda x, o: o + x._get_current_object()
+TypeError: coercing to Unicode: need string or buffer, Request found
+
+[2018-05-14 16:52:29,603+0200]  [UNDEFINED]  [Rasa]  [INFO]  STARTING MICROSERVICE
+[2018-05-14 16:52:37,058+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-14 16:52:37,058+0200]  [123234]  [Rasa]  [INFO]  Received user message with input: <Request 'http://127.0.0.1:5002/' [POST]>
+[2018-05-14 16:52:37,058+0200]  [123234]  [Rasa]  [ERROR]  NameError  global name 'text' is not defined
+[2018-05-14 16:52:37,059+0200]  [123234]  [Rasa]  [DEBUG]  
+Traceback (most recent call last):
+  File "/Users/a.herrera.zurita/Desktop/rasa_core-master/usecases/repsol/rest.py", line 89, in hello
+    logger.info(session, "Processed to RASA format: " + text)
+NameError: global name 'text' is not defined
+
+[2018-05-14 16:53:52,310+0200]  [UNDEFINED]  [Rasa]  [INFO]  STARTING MICROSERVICE
+[2018-05-14 16:54:01,873+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-14 16:54:01,873+0200]  [123234]  [Rasa]  [INFO]  Received user message with input: <Request 'http://127.0.0.1:5002/' [POST]>
+[2018-05-14 16:54:01,874+0200]  [123234]  [Rasa]  [INFO]  Processed to RASA format: <Request 'http://127.0.0.1:5002/' [POST]>
+[2018-05-14 16:54:02,059+0200]  [123234]  [Rasa]  [ERROR]  AttributeError  'dict' object has no attribute 'encode'
+[2018-05-14 16:54:02,060+0200]  [123234]  [Rasa]  [DEBUG]  
+Traceback (most recent call last):
+  File "/Users/a.herrera.zurita/Desktop/rasa_core-master/usecases/repsol/rest.py", line 93, in hello
+    answer_encoded = answer[0].encode('utf8')
+AttributeError: 'dict' object has no attribute 'encode'
+
+[2018-05-14 16:55:20,463+0200]  [UNDEFINED]  [Rasa]  [INFO]  STARTING MICROSERVICE
+[2018-05-14 16:55:26,962+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-14 16:55:26,963+0200]  [123234]  [Rasa]  [INFO]  Received user message with input: <Request 'http://127.0.0.1:5002/' [POST]>
+[2018-05-14 16:55:26,963+0200]  [123234]  [Rasa]  [INFO]  Processed to RASA format: <Request 'http://127.0.0.1:5002/' [POST]>
+[2018-05-14 16:56:28,465+0200]  [UNDEFINED]  [Rasa]  [INFO]  STARTING MICROSERVICE
+[2018-05-14 16:56:41,325+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-14 16:56:41,325+0200]  [123234]  [Rasa]  [ERROR]  AttributeError  'Request' object has no attribute 'text'
+[2018-05-14 16:56:41,327+0200]  [123234]  [Rasa]  [DEBUG]  
+Traceback (most recent call last):
+  File "/Users/a.herrera.zurita/Desktop/rasa_core-master/usecases/repsol/rest.py", line 84, in hello
+    content = request.text
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/werkzeug/local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+AttributeError: 'Request' object has no attribute 'text'
+
+[2018-05-14 16:58:24,500+0200]  [UNDEFINED]  [Rasa]  [INFO]  STARTING MICROSERVICE
+[2018-05-14 16:58:33,557+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-14 16:58:33,557+0200]  [123234]  [Rasa]  [ERROR]  AttributeError  'Request' object has no attribute 'content'
+[2018-05-14 16:58:33,559+0200]  [123234]  [Rasa]  [DEBUG]  
+Traceback (most recent call last):
+  File "/Users/a.herrera.zurita/Desktop/rasa_core-master/usecases/repsol/rest.py", line 84, in hello
+    content = request.content
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/werkzeug/local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+AttributeError: 'Request' object has no attribute 'content'
+
+[2018-05-14 17:01:16,981+0200]  [UNDEFINED]  [Rasa]  [INFO]  STARTING MICROSERVICE
+[2018-05-14 17:01:29,808+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-14 17:01:29,808+0200]  [123234]  [Rasa]  [ERROR]  AttributeError  'Request' object has no attribute 'body'
+[2018-05-14 17:01:29,810+0200]  [123234]  [Rasa]  [DEBUG]  
+Traceback (most recent call last):
+  File "/Users/a.herrera.zurita/Desktop/rasa_core-master/usecases/repsol/rest.py", line 84, in hello
+    content = request.body.text
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/werkzeug/local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+AttributeError: 'Request' object has no attribute 'body'
+
+[2018-05-14 17:02:12,485+0200]  [UNDEFINED]  [Rasa]  [INFO]  STARTING MICROSERVICE
+[2018-05-14 17:02:25,974+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-14 17:02:25,974+0200]  [123234]  [Rasa]  [ERROR]  AttributeError  'Request' object has no attribute 'body'
+[2018-05-14 17:02:25,977+0200]  [123234]  [Rasa]  [DEBUG]  
+Traceback (most recent call last):
+  File "/Users/a.herrera.zurita/Desktop/rasa_core-master/usecases/repsol/rest.py", line 84, in hello
+    content = request.body.text
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/werkzeug/local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+AttributeError: 'Request' object has no attribute 'body'
+
+[2018-05-14 17:03:23,132+0200]  [UNDEFINED]  [Rasa]  [INFO]  STARTING MICROSERVICE
+[2018-05-14 17:03:46,008+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-14 17:03:46,008+0200]  [123234]  [Rasa]  [ERROR]  TypeError  coercing to Unicode: need string or buffer, Request found
+[2018-05-14 17:03:46,011+0200]  [123234]  [Rasa]  [DEBUG]  
+Traceback (most recent call last):
+  File "/Users/a.herrera.zurita/Desktop/rasa_core-master/usecases/repsol/rest.py", line 83, in hello
+    logger.info("req", request)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/ACNLogger/__init__.py", line 27, in info
+    self.logger.info(("["+session+"]  ["+self._service_name+"]  [INFO]  "+message).decode('utf8'))
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/werkzeug/local.py", line 408, in <lambda>
+    __radd__ = lambda x, o: o + x._get_current_object()
+TypeError: coercing to Unicode: need string or buffer, Request found
+
+[2018-05-14 17:06:27,527+0200]  [UNDEFINED]  [Rasa]  [INFO]  STARTING MICROSERVICE
+[2018-05-14 17:06:38,438+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-14 17:06:38,440+0200]  [123234]  [Rasa]  [ERROR]  AttributeError  'Request' object has no attribute 'get'
+[2018-05-14 17:06:38,441+0200]  [123234]  [Rasa]  [DEBUG]  
+Traceback (most recent call last):
+  File "/Users/a.herrera.zurita/Desktop/rasa_core-master/usecases/repsol/rest.py", line 86, in hello
+    content = request.get(body).text
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/werkzeug/local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+AttributeError: 'Request' object has no attribute 'get'
+
+[2018-05-14 17:10:55,293+0200]  [UNDEFINED]  [Rasa]  [INFO]  STARTING MICROSERVICE
+[2018-05-14 17:11:07,223+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-14 17:11:07,225+0200]  [123234]  [Rasa]  [ERROR]  NameError  global name 'body' is not defined
+[2018-05-14 17:11:07,225+0200]  [123234]  [Rasa]  [DEBUG]  
+Traceback (most recent call last):
+  File "/Users/a.herrera.zurita/Desktop/rasa_core-master/usecases/repsol/rest.py", line 86, in hello
+    content = request.get_json(body)
+NameError: global name 'body' is not defined
+
+[2018-05-14 17:11:47,874+0200]  [UNDEFINED]  [Rasa]  [INFO]  STARTING MICROSERVICE
+[2018-05-14 17:11:56,600+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-14 17:11:56,601+0200]  [123234]  [Rasa]  [ERROR]  BadRequest  
+[2018-05-14 17:11:56,604+0200]  [123234]  [Rasa]  [DEBUG]  
+Traceback (most recent call last):
+  File "/Users/a.herrera.zurita/Desktop/rasa_core-master/usecases/repsol/rest.py", line 85, in hello
+    content = request.json
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/werkzeug/local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/wrappers.py", line 108, in json
+    return self.get_json()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/wrappers.py", line 162, in get_json
+    rv = self.on_json_loading_failed(e)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/flask/wrappers.py", line 182, in on_json_loading_failed
+    raise BadRequest()
+BadRequest: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+
+[2018-05-14 17:15:10,246+0200]  [UNDEFINED]  [Rasa]  [INFO]  STARTING MICROSERVICE
+[2018-05-14 17:15:17,259+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-14 17:15:17,259+0200]  [123234]  [Rasa]  [ERROR]  AttributeError  'Request' object has no attribute 'get'
+[2018-05-14 17:15:17,260+0200]  [123234]  [Rasa]  [DEBUG]  
+Traceback (most recent call last):
+  File "/Users/a.herrera.zurita/Desktop/rasa_core-master/usecases/repsol/rest.py", line 85, in hello
+    content = request.get()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/werkzeug/local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+AttributeError: 'Request' object has no attribute 'get'
+
+[2018-05-14 17:16:17,154+0200]  [UNDEFINED]  [Rasa]  [INFO]  STARTING MICROSERVICE
+[2018-05-14 17:16:25,729+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-14 17:16:25,729+0200]  [123234]  [Rasa]  [ERROR]  AttributeError  'Request' object has no attribute 'text'
+[2018-05-14 17:16:25,731+0200]  [123234]  [Rasa]  [DEBUG]  
+Traceback (most recent call last):
+  File "/Users/a.herrera.zurita/Desktop/rasa_core-master/usecases/repsol/rest.py", line 85, in hello
+    content = request.text
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/werkzeug/local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+AttributeError: 'Request' object has no attribute 'text'
+
+[2018-05-14 17:17:13,553+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-14 17:17:13,554+0200]  [123234]  [Rasa]  [ERROR]  AttributeError  'Request' object has no attribute 'text'
+[2018-05-14 17:17:13,554+0200]  [123234]  [Rasa]  [DEBUG]  
+Traceback (most recent call last):
+  File "/Users/a.herrera.zurita/Desktop/rasa_core-master/usecases/repsol/rest.py", line 85, in hello
+    content = request.text
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/werkzeug/local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+AttributeError: 'Request' object has no attribute 'text'
+
+[2018-05-14 17:17:46,420+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-14 17:17:46,421+0200]  [123234]  [Rasa]  [ERROR]  AttributeError  'Request' object has no attribute 'text'
+[2018-05-14 17:17:46,422+0200]  [123234]  [Rasa]  [DEBUG]  
+Traceback (most recent call last):
+  File "/Users/a.herrera.zurita/Desktop/rasa_core-master/usecases/repsol/rest.py", line 85, in hello
+    content = request.text
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/werkzeug/local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+AttributeError: 'Request' object has no attribute 'text'
+
+[2018-05-14 17:21:48,128+0200]  [UNDEFINED]  [Rasa]  [INFO]  STARTING MICROSERVICE
+[2018-05-14 17:22:00,751+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-14 17:22:00,753+0200]  [123234]  [Rasa]  [ERROR]  AttributeError  'Request' object has no attribute 'content'
+[2018-05-14 17:22:00,754+0200]  [123234]  [Rasa]  [DEBUG]  
+Traceback (most recent call last):
+  File "/Users/a.herrera.zurita/Desktop/rasa_core-master/usecases/repsol/rest.py", line 85, in hello
+    content = request.content
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/werkzeug/local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+AttributeError: 'Request' object has no attribute 'content'
+

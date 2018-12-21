@@ -1,0 +1,9 @@
+pandas==0.22.0
+Flask==0.12.2
+requests==2.18.4
+beautifulsoup4==4.6.3
+configparser==3.5.0
+gunicorn==19.7.1
+pathlib==1.0.1
+pathlib2==2.3.0
+redis==2.10.5

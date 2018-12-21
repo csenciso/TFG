@@ -1,0 +1,441 @@
+[2018-05-16 12:49:51,998+0200]  [UNDEFINED]  [Rasa]  [INFO]  STARTING MICROSERVICE
+[2018-05-16 12:50:30,273+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 12:50:30,273+0200]  [1234678]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "1234678", "intent": "greet"}
+[2018-05-16 12:50:30,274+0200]  [1234678]  [Rasa]  [INFO]  Processed to RASA format: _greet[session=1234678]
+[2018-05-16 12:50:52,284+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 12:50:52,285+0200]  [1234678]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "1234678", "intent": "goodbye"}
+[2018-05-16 12:50:52,285+0200]  [1234678]  [Rasa]  [INFO]  Processed to RASA format: _goodbye[]
+[2018-05-16 13:02:21,330+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 13:02:21,335+0200]  [123234]  [Rasa]  [ERROR]  BadRequest  
+[2018-05-16 13:02:21,338+0200]  [123234]  [Rasa]  [DEBUG]  
+Traceback (most recent call last):
+  File "/Users/a.herrera.zurita/Desktop/rasa_core-master/usecases/repsol/rest.py", line 103, in hello
+    content = request.json
+  File "/anaconda2/lib/python2.7/site-packages/werkzeug/local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+  File "/anaconda2/lib/python2.7/site-packages/flask/wrappers.py", line 108, in json
+    return self.get_json()
+  File "/anaconda2/lib/python2.7/site-packages/flask/wrappers.py", line 162, in get_json
+    rv = self.on_json_loading_failed(e)
+  File "/anaconda2/lib/python2.7/site-packages/flask/wrappers.py", line 182, in on_json_loading_failed
+    raise BadRequest()
+BadRequest: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+
+[2018-05-16 13:03:00,998+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 13:03:01,000+0200]  [123234]  [Rasa]  [ERROR]  BadRequest  
+[2018-05-16 13:03:01,001+0200]  [123234]  [Rasa]  [DEBUG]  
+Traceback (most recent call last):
+  File "/Users/a.herrera.zurita/Desktop/rasa_core-master/usecases/repsol/rest.py", line 103, in hello
+    content = request.json
+  File "/anaconda2/lib/python2.7/site-packages/werkzeug/local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+  File "/anaconda2/lib/python2.7/site-packages/flask/wrappers.py", line 108, in json
+    return self.get_json()
+  File "/anaconda2/lib/python2.7/site-packages/flask/wrappers.py", line 162, in get_json
+    rv = self.on_json_loading_failed(e)
+  File "/anaconda2/lib/python2.7/site-packages/flask/wrappers.py", line 182, in on_json_loading_failed
+    raise BadRequest()
+BadRequest: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+
+[2018-05-16 13:03:17,199+0200]  [UNDEFINED]  [Rasa]  [INFO]  STARTING MICROSERVICE
+[2018-05-16 13:03:24,142+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 13:03:24,142+0200]  [123234]  [Rasa]  [ERROR]  BadRequest  
+[2018-05-16 13:03:24,146+0200]  [123234]  [Rasa]  [DEBUG]  
+Traceback (most recent call last):
+  File "/Users/a.herrera.zurita/Desktop/rasa_core-master/usecases/repsol/rest.py", line 103, in hello
+    content = request.json
+  File "/anaconda2/lib/python2.7/site-packages/werkzeug/local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+  File "/anaconda2/lib/python2.7/site-packages/flask/wrappers.py", line 108, in json
+    return self.get_json()
+  File "/anaconda2/lib/python2.7/site-packages/flask/wrappers.py", line 162, in get_json
+    rv = self.on_json_loading_failed(e)
+  File "/anaconda2/lib/python2.7/site-packages/flask/wrappers.py", line 182, in on_json_loading_failed
+    raise BadRequest()
+BadRequest: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+
+[2018-05-16 13:05:49,523+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 13:05:49,525+0200]  [1234678]  [Rasa]  [INFO]  Received user message with input: {"entities": [{"type": "name", "value": "Toni"}], "session": "1234678", "intent": "goodbye"}
+[2018-05-16 13:05:49,526+0200]  [1234678]  [Rasa]  [INFO]  Processed to RASA format: _goodbye[name=Toni]
+[2018-05-16 13:06:07,430+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 13:06:07,431+0200]  [12346783]  [Rasa]  [INFO]  Received user message with input: {"entities": [{"type": "name", "value": "Toni"}], "session": "12346783", "intent": "greet"}
+[2018-05-16 13:06:07,431+0200]  [12346783]  [Rasa]  [INFO]  Processed to RASA format: _greet[session=12346783]
+[2018-05-16 13:07:29,929+0200]  [UNDEFINED]  [Rasa]  [INFO]  STARTING MICROSERVICE
+[2018-05-16 13:07:39,276+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 13:07:39,276+0200]  [12346783]  [Rasa]  [INFO]  Received user message with input: {"entities": [{"type": "name", "value": "Toni"}], "session": "12346783", "intent": "greet"}
+[2018-05-16 13:07:39,276+0200]  [12346783]  [Rasa]  [INFO]  Processed to RASA format: _greet[session=12346783]
+[2018-05-16 13:27:58,314+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 13:27:58,318+0200]  [12346783]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "12346783", "intent": "greetaskname"}
+[2018-05-16 13:27:58,318+0200]  [12346783]  [Rasa]  [INFO]  Processed to RASA format: _greet[session=12346783]
+[2018-05-16 13:29:13,437+0200]  [UNDEFINED]  [Rasa]  [INFO]  STARTING MICROSERVICE
+[2018-05-16 13:29:21,070+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 13:29:21,072+0200]  [12346783]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "12346783", "intent": "greetaskname"}
+[2018-05-16 13:29:21,072+0200]  [12346783]  [Rasa]  [INFO]  Processed to RASA format: _greet[session=12346783]
+[2018-05-16 13:30:36,174+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 13:30:36,177+0200]  [12346783]  [Rasa]  [INFO]  Received user message with input: {"entities": [{"type": "name", "value": "Toni"}], "session": "12346783", "intent": "greetaskname"}
+[2018-05-16 13:30:36,177+0200]  [12346783]  [Rasa]  [INFO]  Processed to RASA format: _greet[session=12346783]
+[2018-05-16 13:46:54,460+0200]  [UNDEFINED]  [Rasa]  [INFO]  STARTING MICROSERVICE
+[2018-05-16 13:47:10,162+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 13:47:10,163+0200]  [12346783]  [Rasa]  [INFO]  Received user message with input: {"entities": [{"type": "name", "value": "Toni"}], "session": "12346783", "intent": "greetaskname"}
+[2018-05-16 13:47:10,163+0200]  [12346783]  [Rasa]  [INFO]  Processed to RASA format: _greet[session=12346783]
+[2018-05-16 13:49:06,409+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 13:49:06,411+0200]  [12346783]  [Rasa]  [INFO]  Received user message with input: {"entities": [{"type": "num", "value": "1234"}], "session": "12346783", "intent": "greetaskname"}
+[2018-05-16 13:49:06,412+0200]  [12346783]  [Rasa]  [INFO]  Processed to RASA format: _greet[session=12346783]
+[2018-05-16 13:54:17,922+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 13:54:17,924+0200]  [12346783]  [Rasa]  [INFO]  Received user message with input: {"entities": [{"type": "num", "value": "1234"}], "session": "12346783", "intent": "invoice_status"}
+[2018-05-16 13:54:17,924+0200]  [12346783]  [Rasa]  [INFO]  Processed to RASA format: _invoice_status[num=1234]
+[2018-05-16 14:07:20,631+0200]  [UNDEFINED]  [Rasa]  [INFO]  STARTING MICROSERVICE
+[2018-05-16 14:07:33,368+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 14:07:33,370+0200]  [12346783]  [Rasa]  [INFO]  Received user message with input: {"entities": [{"type": "num", "value": ""}], "session": "12346783", "intent": "invoice_status"}
+[2018-05-16 14:07:33,370+0200]  [12346783]  [Rasa]  [INFO]  Processed to RASA format: _invoice_status[num=]
+[2018-05-16 14:08:17,626+0200]  [UNDEFINED]  [Rasa]  [INFO]  STARTING MICROSERVICE
+[2018-05-16 14:08:41,835+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 14:08:41,836+0200]  [12346783]  [Rasa]  [INFO]  Received user message with input: {"entities": [{"type": "num", "value": ""}], "session": "12346783", "intent": "invoice_status"}
+[2018-05-16 14:08:41,836+0200]  [12346783]  [Rasa]  [INFO]  Processed to RASA format: _invoice_status[num=]
+[2018-05-16 14:52:25,682+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 14:52:25,687+0200]  [12346783]  [Rasa]  [INFO]  Received user message with input: {"entities": [{"type": "num", "value": "1234"}], "session": "12346783", "intent": "invoice_status"}
+[2018-05-16 14:52:25,687+0200]  [12346783]  [Rasa]  [INFO]  Processed to RASA format: _invoice_status[num=1234]
+[2018-05-16 14:54:38,543+0200]  [UNDEFINED]  [Rasa]  [INFO]  STARTING MICROSERVICE
+[2018-05-16 14:54:58,098+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 14:54:58,099+0200]  [12346783]  [Rasa]  [INFO]  Received user message with input: {"entities": [{"type": "num", "value": ""}], "session": "12346783", "intent": "invoice_status"}
+[2018-05-16 14:54:58,099+0200]  [12346783]  [Rasa]  [INFO]  Processed to RASA format: _invoice_status[num=]
+[2018-05-16 15:11:34,379+0200]  [UNDEFINED]  [Rasa]  [INFO]  STARTING MICROSERVICE
+[2018-05-16 15:11:56,807+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:11:56,814+0200]  [12346783]  [Rasa]  [INFO]  Received user message with input: {"entities": [{"type": "num", "value": ""}], "session": "12346783", "intent": "invoice_status"}
+[2018-05-16 15:11:56,814+0200]  [12346783]  [Rasa]  [INFO]  Processed to RASA format: _invoice_status[num=]
+[2018-05-16 15:12:23,161+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:12:23,163+0200]  [12346783]  [Rasa]  [INFO]  Received user message with input: {"entities": [{"type": "num", "value": "1234"}], "session": "12346783", "intent": "reference_obtained"}
+[2018-05-16 15:12:23,163+0200]  [12346783]  [Rasa]  [INFO]  Processed to RASA format: _reference_obtained[num=1234]
+[2018-05-16 15:14:28,203+0200]  [UNDEFINED]  [Rasa]  [INFO]  STARTING MICROSERVICE
+[2018-05-16 15:14:35,762+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:14:35,764+0200]  [12346783]  [Rasa]  [INFO]  Received user message with input: {"entities": [{"type": "num", "value": "1234"}], "session": "12346783", "intent": "reference_obtained"}
+[2018-05-16 15:14:35,764+0200]  [12346783]  [Rasa]  [INFO]  Processed to RASA format: _reference_obtained[num=1234]
+[2018-05-16 15:14:53,096+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:14:53,098+0200]  [12346783]  [Rasa]  [INFO]  Received user message with input: {"entities": [{"type": "num", "value": "1234"}], "session": "12346783", "intent": "reference_obtained"}
+[2018-05-16 15:14:53,099+0200]  [12346783]  [Rasa]  [INFO]  Processed to RASA format: _reference_obtained[num=1234]
+[2018-05-16 15:16:52,701+0200]  [UNDEFINED]  [Rasa]  [INFO]  STARTING MICROSERVICE
+[2018-05-16 15:17:18,561+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:17:18,561+0200]  [12346783]  [Rasa]  [INFO]  Received user message with input: {"entities": [{"type": "num", "value": "1234"}], "session": "12346783", "intent": "reference_obtained"}
+[2018-05-16 15:17:18,561+0200]  [12346783]  [Rasa]  [INFO]  Processed to RASA format: /reference_obtained{"num" : "1234"}
+[2018-05-16 15:17:22,588+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:17:22,588+0200]  [12346783]  [Rasa]  [INFO]  Received user message with input: {"entities": [{"type": "num", "value": "1234"}], "session": "12346783", "intent": "reference_obtained"}
+[2018-05-16 15:17:22,589+0200]  [12346783]  [Rasa]  [INFO]  Processed to RASA format: /reference_obtained{"num" : "1234"}
+[2018-05-16 15:19:43,211+0200]  [UNDEFINED]  [Rasa]  [INFO]  STARTING MICROSERVICE
+[2018-05-16 15:20:17,381+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:20:17,387+0200]  [12346783]  [Rasa]  [INFO]  Received user message with input: {"entities": [{"type": "num", "value": ""}], "session": "12346783", "intent": "invoice_status"}
+[2018-05-16 15:20:17,387+0200]  [12346783]  [Rasa]  [INFO]  Processed to RASA format: /invoice_status{"num" : ""}
+[2018-05-16 15:20:21,979+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:20:21,980+0200]  [12346783]  [Rasa]  [INFO]  Received user message with input: {"entities": [{"type": "num", "value": ""}], "session": "12346783", "intent": "invoice_status"}
+[2018-05-16 15:20:21,980+0200]  [12346783]  [Rasa]  [INFO]  Processed to RASA format: /invoice_status{"num" : ""}
+[2018-05-16 15:21:47,375+0200]  [UNDEFINED]  [Rasa]  [INFO]  STARTING MICROSERVICE
+[2018-05-16 15:22:00,049+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:22:00,051+0200]  [12346783]  [Rasa]  [INFO]  Received user message with input: {"entities": [{"type": "num", "value": ""}], "session": "12346783", "intent": "invoice_status"}
+[2018-05-16 15:22:00,051+0200]  [12346783]  [Rasa]  [INFO]  Processed to RASA format: /invoice_status{"num" : ""}
+[2018-05-16 15:22:05,598+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:22:05,598+0200]  [12346783]  [Rasa]  [INFO]  Received user message with input: {"entities": [{"type": "reference", "value": ""}], "session": "12346783", "intent": "invoice_status"}
+[2018-05-16 15:22:05,599+0200]  [12346783]  [Rasa]  [INFO]  Processed to RASA format: /invoice_status{"reference" : ""}
+[2018-05-16 15:22:09,110+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:22:09,110+0200]  [12346783]  [Rasa]  [INFO]  Received user message with input: {"entities": [{"type": "reference", "value": ""}], "session": "12346783", "intent": "invoice_status"}
+[2018-05-16 15:22:09,110+0200]  [12346783]  [Rasa]  [INFO]  Processed to RASA format: /invoice_status{"reference" : ""}
+[2018-05-16 15:22:10,008+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:22:10,010+0200]  [12346783]  [Rasa]  [INFO]  Received user message with input: {"entities": [{"type": "reference", "value": ""}], "session": "12346783", "intent": "invoice_status"}
+[2018-05-16 15:22:10,010+0200]  [12346783]  [Rasa]  [INFO]  Processed to RASA format: /invoice_status{"reference" : ""}
+[2018-05-16 15:22:10,625+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:22:10,625+0200]  [12346783]  [Rasa]  [INFO]  Received user message with input: {"entities": [{"type": "reference", "value": ""}], "session": "12346783", "intent": "invoice_status"}
+[2018-05-16 15:22:10,626+0200]  [12346783]  [Rasa]  [INFO]  Processed to RASA format: /invoice_status{"reference" : ""}
+[2018-05-16 15:22:21,332+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:22:21,333+0200]  [12346783]  [Rasa]  [INFO]  Received user message with input: {"entities": [{"type": "reference", "value": "1234"}], "session": "12346783", "intent": "reference_obtained"}
+[2018-05-16 15:22:21,333+0200]  [12346783]  [Rasa]  [INFO]  Processed to RASA format: /reference_obtained{"reference" : "1234"}
+[2018-05-16 15:22:25,151+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:22:25,151+0200]  [12346783]  [Rasa]  [INFO]  Received user message with input: {"entities": [{"type": "reference", "value": "1234"}], "session": "12346783", "intent": "reference_obtained"}
+[2018-05-16 15:22:25,151+0200]  [12346783]  [Rasa]  [INFO]  Processed to RASA format: /reference_obtained{"reference" : "1234"}
+[2018-05-16 15:22:26,198+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:22:26,198+0200]  [12346783]  [Rasa]  [INFO]  Received user message with input: {"entities": [{"type": "reference", "value": "1234"}], "session": "12346783", "intent": "reference_obtained"}
+[2018-05-16 15:22:26,199+0200]  [12346783]  [Rasa]  [INFO]  Processed to RASA format: /reference_obtained{"reference" : "1234"}
+[2018-05-16 15:22:27,002+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:22:27,003+0200]  [12346783]  [Rasa]  [INFO]  Received user message with input: {"entities": [{"type": "reference", "value": "1234"}], "session": "12346783", "intent": "reference_obtained"}
+[2018-05-16 15:22:27,003+0200]  [12346783]  [Rasa]  [INFO]  Processed to RASA format: /reference_obtained{"reference" : "1234"}
+[2018-05-16 15:45:25,483+0200]  [UNDEFINED]  [Rasa]  [INFO]  STARTING MICROSERVICE
+[2018-05-16 15:45:45,218+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:45:45,223+0200]  [12346783]  [Rasa]  [INFO]  Received user message with input: {"entities": [{"type": "reference", "value": "1234"}], "session": "12346783", "intent": "reference_obtained"}
+[2018-05-16 15:45:45,224+0200]  [12346783]  [Rasa]  [INFO]  Processed to RASA format: /reference_obtained{"reference" : "1234"}
+[2018-05-16 15:46:04,972+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:46:04,974+0200]  [12346783]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "12346783", "intent": "greet"}
+[2018-05-16 15:46:04,975+0200]  [12346783]  [Rasa]  [INFO]  Processed to RASA format: /greet{"session":"12346783"}
+[2018-05-16 15:46:10,430+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:46:10,430+0200]  [1234678]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "1234678", "intent": "greet"}
+[2018-05-16 15:46:10,430+0200]  [1234678]  [Rasa]  [INFO]  Processed to RASA format: /greet{"session":"1234678"}
+[2018-05-16 15:46:12,520+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:46:12,521+0200]  [1234678]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "1234678", "intent": "greet"}
+[2018-05-16 15:46:12,521+0200]  [1234678]  [Rasa]  [INFO]  Processed to RASA format: /greet{"session":"1234678"}
+[2018-05-16 15:46:13,362+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:46:13,364+0200]  [1234678]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "1234678", "intent": "greet"}
+[2018-05-16 15:46:13,364+0200]  [1234678]  [Rasa]  [INFO]  Processed to RASA format: /greet{"session":"1234678"}
+[2018-05-16 15:46:13,857+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:46:13,857+0200]  [1234678]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "1234678", "intent": "greet"}
+[2018-05-16 15:46:13,857+0200]  [1234678]  [Rasa]  [INFO]  Processed to RASA format: /greet{"session":"1234678"}
+[2018-05-16 15:46:14,158+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:46:14,159+0200]  [1234678]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "1234678", "intent": "greet"}
+[2018-05-16 15:46:14,159+0200]  [1234678]  [Rasa]  [INFO]  Processed to RASA format: /greet{"session":"1234678"}
+[2018-05-16 15:46:14,437+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:46:14,437+0200]  [1234678]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "1234678", "intent": "greet"}
+[2018-05-16 15:46:14,437+0200]  [1234678]  [Rasa]  [INFO]  Processed to RASA format: /greet{"session":"1234678"}
+[2018-05-16 15:46:14,847+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:46:14,847+0200]  [1234678]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "1234678", "intent": "greet"}
+[2018-05-16 15:46:14,847+0200]  [1234678]  [Rasa]  [INFO]  Processed to RASA format: /greet{"session":"1234678"}
+[2018-05-16 15:46:15,171+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:46:15,172+0200]  [1234678]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "1234678", "intent": "greet"}
+[2018-05-16 15:46:15,172+0200]  [1234678]  [Rasa]  [INFO]  Processed to RASA format: /greet{"session":"1234678"}
+[2018-05-16 15:46:15,621+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:46:15,622+0200]  [1234678]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "1234678", "intent": "greet"}
+[2018-05-16 15:46:15,622+0200]  [1234678]  [Rasa]  [INFO]  Processed to RASA format: /greet{"session":"1234678"}
+[2018-05-16 15:46:15,930+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:46:15,930+0200]  [1234678]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "1234678", "intent": "greet"}
+[2018-05-16 15:46:15,930+0200]  [1234678]  [Rasa]  [INFO]  Processed to RASA format: /greet{"session":"1234678"}
+[2018-05-16 15:46:16,232+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:46:16,233+0200]  [1234678]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "1234678", "intent": "greet"}
+[2018-05-16 15:46:16,233+0200]  [1234678]  [Rasa]  [INFO]  Processed to RASA format: /greet{"session":"1234678"}
+[2018-05-16 15:46:16,569+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:46:16,569+0200]  [1234678]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "1234678", "intent": "greet"}
+[2018-05-16 15:46:16,569+0200]  [1234678]  [Rasa]  [INFO]  Processed to RASA format: /greet{"session":"1234678"}
+[2018-05-16 15:46:16,902+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:46:16,902+0200]  [1234678]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "1234678", "intent": "greet"}
+[2018-05-16 15:46:16,902+0200]  [1234678]  [Rasa]  [INFO]  Processed to RASA format: /greet{"session":"1234678"}
+[2018-05-16 15:46:17,238+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:46:17,239+0200]  [1234678]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "1234678", "intent": "greet"}
+[2018-05-16 15:46:17,239+0200]  [1234678]  [Rasa]  [INFO]  Processed to RASA format: /greet{"session":"1234678"}
+[2018-05-16 15:46:17,769+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:46:17,769+0200]  [1234678]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "1234678", "intent": "greet"}
+[2018-05-16 15:46:17,769+0200]  [1234678]  [Rasa]  [INFO]  Processed to RASA format: /greet{"session":"1234678"}
+[2018-05-16 15:46:18,046+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:46:18,046+0200]  [1234678]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "1234678", "intent": "greet"}
+[2018-05-16 15:46:18,046+0200]  [1234678]  [Rasa]  [INFO]  Processed to RASA format: /greet{"session":"1234678"}
+[2018-05-16 15:46:18,335+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:46:18,336+0200]  [1234678]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "1234678", "intent": "greet"}
+[2018-05-16 15:46:18,336+0200]  [1234678]  [Rasa]  [INFO]  Processed to RASA format: /greet{"session":"1234678"}
+[2018-05-16 15:46:22,099+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:46:22,101+0200]  [1234678]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "1234678", "intent": "greet"}
+[2018-05-16 15:46:22,102+0200]  [1234678]  [Rasa]  [INFO]  Processed to RASA format: /greet{"session":"1234678"}
+[2018-05-16 15:46:22,840+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:46:22,840+0200]  [1234678]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "1234678", "intent": "greet"}
+[2018-05-16 15:46:22,840+0200]  [1234678]  [Rasa]  [INFO]  Processed to RASA format: /greet{"session":"1234678"}
+[2018-05-16 15:46:23,486+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:46:23,487+0200]  [1234678]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "1234678", "intent": "greet"}
+[2018-05-16 15:46:23,487+0200]  [1234678]  [Rasa]  [INFO]  Processed to RASA format: /greet{"session":"1234678"}
+[2018-05-16 15:46:23,861+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:46:23,862+0200]  [1234678]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "1234678", "intent": "greet"}
+[2018-05-16 15:46:23,862+0200]  [1234678]  [Rasa]  [INFO]  Processed to RASA format: /greet{"session":"1234678"}
+[2018-05-16 15:46:24,148+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:46:24,148+0200]  [1234678]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "1234678", "intent": "greet"}
+[2018-05-16 15:46:24,149+0200]  [1234678]  [Rasa]  [INFO]  Processed to RASA format: /greet{"session":"1234678"}
+[2018-05-16 15:46:24,584+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:46:24,585+0200]  [1234678]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "1234678", "intent": "greet"}
+[2018-05-16 15:46:24,585+0200]  [1234678]  [Rasa]  [INFO]  Processed to RASA format: /greet{"session":"1234678"}
+[2018-05-16 15:46:25,074+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:46:25,075+0200]  [1234678]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "1234678", "intent": "greet"}
+[2018-05-16 15:46:25,075+0200]  [1234678]  [Rasa]  [INFO]  Processed to RASA format: /greet{"session":"1234678"}
+[2018-05-16 15:46:25,306+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:46:25,306+0200]  [1234678]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "1234678", "intent": "greet"}
+[2018-05-16 15:46:25,306+0200]  [1234678]  [Rasa]  [INFO]  Processed to RASA format: /greet{"session":"1234678"}
+[2018-05-16 15:46:25,635+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:46:25,635+0200]  [1234678]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "1234678", "intent": "greet"}
+[2018-05-16 15:46:25,635+0200]  [1234678]  [Rasa]  [INFO]  Processed to RASA format: /greet{"session":"1234678"}
+[2018-05-16 15:46:25,925+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:46:25,926+0200]  [1234678]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "1234678", "intent": "greet"}
+[2018-05-16 15:46:25,926+0200]  [1234678]  [Rasa]  [INFO]  Processed to RASA format: /greet{"session":"1234678"}
+[2018-05-16 15:46:26,320+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:46:26,320+0200]  [1234678]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "1234678", "intent": "greet"}
+[2018-05-16 15:46:26,321+0200]  [1234678]  [Rasa]  [INFO]  Processed to RASA format: /greet{"session":"1234678"}
+[2018-05-16 15:46:26,743+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:46:26,744+0200]  [1234678]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "1234678", "intent": "greet"}
+[2018-05-16 15:46:26,744+0200]  [1234678]  [Rasa]  [INFO]  Processed to RASA format: /greet{"session":"1234678"}
+[2018-05-16 15:46:31,342+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:46:31,344+0200]  [123467]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "123467", "intent": "greet"}
+[2018-05-16 15:46:31,344+0200]  [123467]  [Rasa]  [INFO]  Processed to RASA format: /greet{"session":"123467"}
+[2018-05-16 15:46:32,110+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:46:32,110+0200]  [123467]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "123467", "intent": "greet"}
+[2018-05-16 15:46:32,111+0200]  [123467]  [Rasa]  [INFO]  Processed to RASA format: /greet{"session":"123467"}
+[2018-05-16 15:46:32,403+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:46:32,404+0200]  [123467]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "123467", "intent": "greet"}
+[2018-05-16 15:46:32,404+0200]  [123467]  [Rasa]  [INFO]  Processed to RASA format: /greet{"session":"123467"}
+[2018-05-16 15:46:32,575+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:46:32,575+0200]  [123467]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "123467", "intent": "greet"}
+[2018-05-16 15:46:32,576+0200]  [123467]  [Rasa]  [INFO]  Processed to RASA format: /greet{"session":"123467"}
+[2018-05-16 15:46:32,965+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:46:32,966+0200]  [123467]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "123467", "intent": "greet"}
+[2018-05-16 15:46:32,966+0200]  [123467]  [Rasa]  [INFO]  Processed to RASA format: /greet{"session":"123467"}
+[2018-05-16 15:46:57,401+0200]  [UNDEFINED]  [Rasa]  [INFO]  STARTING MICROSERVICE
+[2018-05-16 15:47:04,430+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:47:04,431+0200]  [123467]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "123467", "intent": "greet"}
+[2018-05-16 15:47:04,431+0200]  [123467]  [Rasa]  [INFO]  Processed to RASA format: /greet{"session":"123467"}
+[2018-05-16 15:47:06,154+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:47:06,155+0200]  [123467]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "123467", "intent": "greet"}
+[2018-05-16 15:47:06,155+0200]  [123467]  [Rasa]  [INFO]  Processed to RASA format: /greet{"session":"123467"}
+[2018-05-16 15:47:06,368+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:47:06,369+0200]  [123467]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "123467", "intent": "greet"}
+[2018-05-16 15:47:06,369+0200]  [123467]  [Rasa]  [INFO]  Processed to RASA format: /greet{"session":"123467"}
+[2018-05-16 15:47:06,803+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:47:06,804+0200]  [123467]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "123467", "intent": "greet"}
+[2018-05-16 15:47:06,804+0200]  [123467]  [Rasa]  [INFO]  Processed to RASA format: /greet{"session":"123467"}
+[2018-05-16 15:47:07,125+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:47:07,126+0200]  [123467]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "123467", "intent": "greet"}
+[2018-05-16 15:47:07,126+0200]  [123467]  [Rasa]  [INFO]  Processed to RASA format: /greet{"session":"123467"}
+[2018-05-16 15:47:07,425+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:47:07,425+0200]  [123467]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "123467", "intent": "greet"}
+[2018-05-16 15:47:07,425+0200]  [123467]  [Rasa]  [INFO]  Processed to RASA format: /greet{"session":"123467"}
+[2018-05-16 15:47:07,818+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:47:07,819+0200]  [123467]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "123467", "intent": "greet"}
+[2018-05-16 15:47:07,819+0200]  [123467]  [Rasa]  [INFO]  Processed to RASA format: /greet{"session":"123467"}
+[2018-05-16 15:47:08,673+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:47:08,674+0200]  [123467]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "123467", "intent": "greet"}
+[2018-05-16 15:47:08,674+0200]  [123467]  [Rasa]  [INFO]  Processed to RASA format: /greet{"session":"123467"}
+[2018-05-16 15:48:02,100+0200]  [UNDEFINED]  [Rasa]  [INFO]  STARTING MICROSERVICE
+[2018-05-16 15:48:17,051+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:48:17,052+0200]  [123467]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "123467", "intent": "greet"}
+[2018-05-16 15:48:17,052+0200]  [123467]  [Rasa]  [INFO]  Processed to RASA format: /greet{"session":"123467"}
+[2018-05-16 15:48:17,152+0200]  [123467]  [Rasa]  [ERROR]  ValueError  BLANK RESPONSE FROM RASA!
+[2018-05-16 15:48:17,153+0200]  [123467]  [Rasa]  [INFO]  
+Traceback (most recent call last):
+  File "/Users/a.herrera.zurita/Desktop/rasa_core-master/usecases/repsol/rest.py", line 118, in hello
+    raise ValueError('BLANK RESPONSE FROM RASA!')
+ValueError: BLANK RESPONSE FROM RASA!
+
+[2018-05-16 15:48:36,629+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:48:36,629+0200]  [123467]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "123467", "intent": "greet"}
+[2018-05-16 15:48:36,629+0200]  [123467]  [Rasa]  [INFO]  Processed to RASA format: /greet{"session":"123467"}
+[2018-05-16 15:48:36,634+0200]  [123467]  [Rasa]  [ERROR]  ValueError  BLANK RESPONSE FROM RASA!
+[2018-05-16 15:48:36,634+0200]  [123467]  [Rasa]  [INFO]  
+Traceback (most recent call last):
+  File "/Users/a.herrera.zurita/Desktop/rasa_core-master/usecases/repsol/rest.py", line 118, in hello
+    raise ValueError('BLANK RESPONSE FROM RASA!')
+ValueError: BLANK RESPONSE FROM RASA!
+
+[2018-05-16 15:48:37,901+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:48:37,901+0200]  [123467]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "123467", "intent": "greet"}
+[2018-05-16 15:48:37,902+0200]  [123467]  [Rasa]  [INFO]  Processed to RASA format: /greet{"session":"123467"}
+[2018-05-16 15:48:37,904+0200]  [123467]  [Rasa]  [ERROR]  ValueError  BLANK RESPONSE FROM RASA!
+[2018-05-16 15:48:37,905+0200]  [123467]  [Rasa]  [INFO]  
+Traceback (most recent call last):
+  File "/Users/a.herrera.zurita/Desktop/rasa_core-master/usecases/repsol/rest.py", line 118, in hello
+    raise ValueError('BLANK RESPONSE FROM RASA!')
+ValueError: BLANK RESPONSE FROM RASA!
+
+[2018-05-16 15:49:05,666+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:49:05,666+0200]  [123467]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "123467", "intent": "invoicestatus"}
+[2018-05-16 15:49:05,666+0200]  [123467]  [Rasa]  [INFO]  Processed to RASA format: /invoicestatus
+[2018-05-16 15:49:05,671+0200]  [123467]  [Rasa]  [ERROR]  ValueError  BLANK RESPONSE FROM RASA!
+[2018-05-16 15:49:05,671+0200]  [123467]  [Rasa]  [INFO]  
+Traceback (most recent call last):
+  File "/Users/a.herrera.zurita/Desktop/rasa_core-master/usecases/repsol/rest.py", line 118, in hello
+    raise ValueError('BLANK RESPONSE FROM RASA!')
+ValueError: BLANK RESPONSE FROM RASA!
+
+[2018-05-16 15:50:30,342+0200]  [UNDEFINED]  [Rasa]  [INFO]  STARTING MICROSERVICE
+[2018-05-16 15:50:36,723+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:50:36,723+0200]  [123467]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "123467", "intent": "greet"}
+[2018-05-16 15:50:36,723+0200]  [123467]  [Rasa]  [INFO]  Processed to RASA format: /greet{"session":"123467"}
+[2018-05-16 15:50:58,330+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:50:58,331+0200]  [123467]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "123467", "intent": "invoicestatus"}
+[2018-05-16 15:50:58,331+0200]  [123467]  [Rasa]  [INFO]  Processed to RASA format: /invoicestatus
+[2018-05-16 15:51:23,285+0200]  [UNDEFINED]  [Rasa]  [INFO]  STARTING MICROSERVICE
+[2018-05-16 15:51:31,480+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:51:31,481+0200]  [123467]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "123467", "intent": "invoicestatus"}
+[2018-05-16 15:51:31,481+0200]  [123467]  [Rasa]  [INFO]  Processed to RASA format: /invoicestatus
+[2018-05-16 15:51:37,037+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:51:37,037+0200]  [123467]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "123467", "intent": "invoicestatus"}
+[2018-05-16 15:51:37,037+0200]  [123467]  [Rasa]  [INFO]  Processed to RASA format: /invoicestatus
+[2018-05-16 15:51:39,211+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:51:39,211+0200]  [123467]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "123467", "intent": "invoicestatus"}
+[2018-05-16 15:51:39,211+0200]  [123467]  [Rasa]  [INFO]  Processed to RASA format: /invoicestatus
+[2018-05-16 15:51:40,320+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:51:40,321+0200]  [123467]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "123467", "intent": "invoicestatus"}
+[2018-05-16 15:51:40,321+0200]  [123467]  [Rasa]  [INFO]  Processed to RASA format: /invoicestatus
+[2018-05-16 15:51:44,555+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:51:44,556+0200]  [123467]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "123467", "intent": "invoicestatus"}
+[2018-05-16 15:51:44,556+0200]  [123467]  [Rasa]  [INFO]  Processed to RASA format: /invoicestatus
+[2018-05-16 15:51:45,457+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:51:45,457+0200]  [123467]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "123467", "intent": "invoicestatus"}
+[2018-05-16 15:51:45,458+0200]  [123467]  [Rasa]  [INFO]  Processed to RASA format: /invoicestatus
+[2018-05-16 15:51:46,275+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:51:46,276+0200]  [123467]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "123467", "intent": "invoicestatus"}
+[2018-05-16 15:51:46,276+0200]  [123467]  [Rasa]  [INFO]  Processed to RASA format: /invoicestatus
+[2018-05-16 15:56:48,503+0200]  [UNDEFINED]  [Rasa]  [INFO]  STARTING MICROSERVICE
+[2018-05-16 15:57:30,201+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:57:30,205+0200]  [123467]  [Rasa]  [INFO]  Received user message with input: {"entities": [{"type": "reference", "value": ""}], "session": "123467", "intent": "invoicestatus"}
+[2018-05-16 15:57:30,205+0200]  [123467]  [Rasa]  [INFO]  Processed to RASA format: /invoicestatus{"reference" : ""}
+[2018-05-16 15:57:33,924+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:57:33,925+0200]  [123467]  [Rasa]  [INFO]  Received user message with input: {"entities": [{"type": "reference", "value": ""}], "session": "123467", "intent": "invoicestatus"}
+[2018-05-16 15:57:33,925+0200]  [123467]  [Rasa]  [INFO]  Processed to RASA format: /invoicestatus{"reference" : ""}
+[2018-05-16 15:57:35,382+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:57:35,385+0200]  [123467]  [Rasa]  [INFO]  Received user message with input: {"entities": [{"type": "reference", "value": ""}], "session": "123467", "intent": "invoicestatus"}
+[2018-05-16 15:57:35,385+0200]  [123467]  [Rasa]  [INFO]  Processed to RASA format: /invoicestatus{"reference" : ""}
+[2018-05-16 15:57:36,747+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:57:36,748+0200]  [123467]  [Rasa]  [INFO]  Received user message with input: {"entities": [{"type": "reference", "value": ""}], "session": "123467", "intent": "invoicestatus"}
+[2018-05-16 15:57:36,748+0200]  [123467]  [Rasa]  [INFO]  Processed to RASA format: /invoicestatus{"reference" : ""}
+[2018-05-16 15:57:37,378+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:57:37,378+0200]  [123467]  [Rasa]  [INFO]  Received user message with input: {"entities": [{"type": "reference", "value": ""}], "session": "123467", "intent": "invoicestatus"}
+[2018-05-16 15:57:37,378+0200]  [123467]  [Rasa]  [INFO]  Processed to RASA format: /invoicestatus{"reference" : ""}
+[2018-05-16 15:57:38,164+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:57:38,164+0200]  [123467]  [Rasa]  [INFO]  Received user message with input: {"entities": [{"type": "reference", "value": ""}], "session": "123467", "intent": "invoicestatus"}
+[2018-05-16 15:57:38,165+0200]  [123467]  [Rasa]  [INFO]  Processed to RASA format: /invoicestatus{"reference" : ""}
+[2018-05-16 15:57:38,184+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:57:38,184+0200]  [123467]  [Rasa]  [INFO]  Received user message with input: {"entities": [{"type": "reference", "value": ""}], "session": "123467", "intent": "invoicestatus"}
+[2018-05-16 15:57:38,184+0200]  [123467]  [Rasa]  [INFO]  Processed to RASA format: /invoicestatus{"reference" : ""}
+[2018-05-16 15:57:38,197+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:57:38,197+0200]  [123467]  [Rasa]  [INFO]  Received user message with input: {"entities": [{"type": "reference", "value": ""}], "session": "123467", "intent": "invoicestatus"}
+[2018-05-16 15:57:38,197+0200]  [123467]  [Rasa]  [INFO]  Processed to RASA format: /invoicestatus{"reference" : ""}
+[2018-05-16 15:57:38,224+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:57:38,225+0200]  [123467]  [Rasa]  [INFO]  Received user message with input: {"entities": [{"type": "reference", "value": ""}], "session": "123467", "intent": "invoicestatus"}
+[2018-05-16 15:57:38,225+0200]  [123467]  [Rasa]  [INFO]  Processed to RASA format: /invoicestatus{"reference" : ""}
+[2018-05-16 15:57:38,238+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:57:38,238+0200]  [123467]  [Rasa]  [INFO]  Received user message with input: {"entities": [{"type": "reference", "value": ""}], "session": "123467", "intent": "invoicestatus"}
+[2018-05-16 15:57:38,239+0200]  [123467]  [Rasa]  [INFO]  Processed to RASA format: /invoicestatus{"reference" : ""}
+[2018-05-16 15:57:55,965+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:57:55,966+0200]  [123467]  [Rasa]  [INFO]  Received user message with input: {"entities": [{"type": "reference", "value": ""}], "session": "123467", "intent": "reference_obtained"}
+[2018-05-16 15:57:55,966+0200]  [123467]  [Rasa]  [INFO]  Processed to RASA format: /reference_obtained{"reference" : ""}
+[2018-05-16 15:58:10,095+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:58:10,097+0200]  [123467]  [Rasa]  [INFO]  Received user message with input: {"entities": [{"type": "reference", "value": "1234"}], "session": "123467", "intent": "reference_obtained"}
+[2018-05-16 15:58:10,097+0200]  [123467]  [Rasa]  [INFO]  Processed to RASA format: /reference_obtained{"reference" : "1234"}
+[2018-05-16 15:58:38,767+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:58:38,772+0200]  [123467]  [Rasa]  [INFO]  Received user message with input: {"entities": [{"type": "reference", "value": "1234"}], "session": "123467", "intent": "referenceobtained"}
+[2018-05-16 15:58:38,773+0200]  [123467]  [Rasa]  [INFO]  Processed to RASA format: /referenceobtained{"reference" : "1234"}
+[2018-05-16 15:58:42,000+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 15:58:42,000+0200]  [123467]  [Rasa]  [INFO]  Received user message with input: {"entities": [{"type": "reference", "value": "1234"}], "session": "123467", "intent": "referenceobtained"}
+[2018-05-16 15:58:42,001+0200]  [123467]  [Rasa]  [INFO]  Processed to RASA format: /referenceobtained{"reference" : "1234"}
+[2018-05-16 16:00:03,637+0200]  [UNDEFINED]  [Rasa]  [INFO]  STARTING MICROSERVICE
+[2018-05-16 16:00:10,557+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 16:00:10,557+0200]  [123467]  [Rasa]  [INFO]  Received user message with input: {"entities": [{"type": "reference", "value": "1234"}], "session": "123467", "intent": "referenceobtained"}
+[2018-05-16 16:00:10,558+0200]  [123467]  [Rasa]  [INFO]  Processed to RASA format: /referenceobtained{"reference" : "1234"}
+[2018-05-16 16:00:25,269+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 16:00:25,271+0200]  [123467]  [Rasa]  [INFO]  Received user message with input: {"entities": [{"type": "reference", "value": "1234"}], "session": "123467", "intent": "referenceobtained"}
+[2018-05-16 16:00:25,271+0200]  [123467]  [Rasa]  [INFO]  Processed to RASA format: /referenceobtained{"reference" : "1234"}
+[2018-05-16 16:00:33,370+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 16:00:33,370+0200]  [123467]  [Rasa]  [INFO]  Received user message with input: {"entities": [{"type": "reference", "value": "1234"}], "session": "123467", "intent": "greet"}
+[2018-05-16 16:00:33,371+0200]  [123467]  [Rasa]  [INFO]  Processed to RASA format: /greet{"session":"123467"}
+[2018-05-16 16:00:35,764+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 16:00:35,765+0200]  [123467]  [Rasa]  [INFO]  Received user message with input: {"entities": [{"type": "reference", "value": "1234"}], "session": "123467", "intent": "greet"}
+[2018-05-16 16:00:35,765+0200]  [123467]  [Rasa]  [INFO]  Processed to RASA format: /greet{"session":"123467"}
+[2018-05-16 16:00:36,777+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 16:00:36,778+0200]  [123467]  [Rasa]  [INFO]  Received user message with input: {"entities": [{"type": "reference", "value": "1234"}], "session": "123467", "intent": "greet"}
+[2018-05-16 16:00:36,778+0200]  [123467]  [Rasa]  [INFO]  Processed to RASA format: /greet{"session":"123467"}
+[2018-05-16 16:00:37,613+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 16:00:37,613+0200]  [123467]  [Rasa]  [INFO]  Received user message with input: {"entities": [{"type": "reference", "value": "1234"}], "session": "123467", "intent": "greet"}
+[2018-05-16 16:00:37,614+0200]  [123467]  [Rasa]  [INFO]  Processed to RASA format: /greet{"session":"123467"}
+[2018-05-16 16:00:38,222+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 16:00:38,222+0200]  [123467]  [Rasa]  [INFO]  Received user message with input: {"entities": [{"type": "reference", "value": "1234"}], "session": "123467", "intent": "greet"}
+[2018-05-16 16:00:38,223+0200]  [123467]  [Rasa]  [INFO]  Processed to RASA format: /greet{"session":"123467"}
+[2018-05-16 16:00:38,690+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 16:00:38,690+0200]  [123467]  [Rasa]  [INFO]  Received user message with input: {"entities": [{"type": "reference", "value": "1234"}], "session": "123467", "intent": "greet"}
+[2018-05-16 16:00:38,690+0200]  [123467]  [Rasa]  [INFO]  Processed to RASA format: /greet{"session":"123467"}
+[2018-05-16 16:00:39,127+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 16:00:39,128+0200]  [123467]  [Rasa]  [INFO]  Received user message with input: {"entities": [{"type": "reference", "value": "1234"}], "session": "123467", "intent": "greet"}
+[2018-05-16 16:00:39,128+0200]  [123467]  [Rasa]  [INFO]  Processed to RASA format: /greet{"session":"123467"}
+[2018-05-16 16:00:39,651+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 16:00:39,651+0200]  [123467]  [Rasa]  [INFO]  Received user message with input: {"entities": [{"type": "reference", "value": "1234"}], "session": "123467", "intent": "greet"}
+[2018-05-16 16:00:39,651+0200]  [123467]  [Rasa]  [INFO]  Processed to RASA format: /greet{"session":"123467"}
+[2018-05-16 16:00:40,143+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 16:00:40,145+0200]  [123467]  [Rasa]  [INFO]  Received user message with input: {"entities": [{"type": "reference", "value": "1234"}], "session": "123467", "intent": "greet"}
+[2018-05-16 16:00:40,145+0200]  [123467]  [Rasa]  [INFO]  Processed to RASA format: /greet{"session":"123467"}
+[2018-05-16 16:00:54,581+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-16 16:00:54,581+0200]  [123467]  [Rasa]  [INFO]  Received user message with input: {"entities": [{"type": "reference", "value": "1234"}], "session": "123467", "intent": "greet"}
+[2018-05-16 16:00:54,582+0200]  [123467]  [Rasa]  [INFO]  Processed to RASA format: /greet{"session":"123467"}

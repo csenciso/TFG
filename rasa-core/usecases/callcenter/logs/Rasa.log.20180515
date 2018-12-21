@@ -1,0 +1,184 @@
+[2018-05-15 13:17:09,036+0200]  [UNDEFINED]  [Rasa]  [INFO]  STARTING MICROSERVICE
+[2018-05-15 13:18:30,522+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-15 13:18:30,546+0200]  [123234]  [Rasa]  [ERROR]  TypeError  coercing to Unicode: need string or buffer, dict found
+[2018-05-15 13:18:30,548+0200]  [123234]  [Rasa]  [DEBUG]  
+Traceback (most recent call last):
+  File "/Users/a.herrera.zurita/Desktop/rasa_core-master/usecases/repsol/rest.py", line 103, in hello
+    logger.info("req", content)
+  File "/anaconda2/lib/python2.7/site-packages/ACNLogger/__init__.py", line 27, in info
+    self.logger.info(("["+session+"]  ["+self._service_name+"]  [INFO]  "+message).decode('utf8'))
+TypeError: coercing to Unicode: need string or buffer, dict found
+
+[2018-05-15 14:41:21,019+0200]  [UNDEFINED]  [Rasa]  [INFO]  STARTING MICROSERVICE
+[2018-05-15 14:42:06,368+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-15 14:42:06,383+0200]  [123234]  [Rasa]  [ERROR]  TypeError  coercing to Unicode: need string or buffer, dict found
+[2018-05-15 14:42:06,384+0200]  [123234]  [Rasa]  [DEBUG]  
+Traceback (most recent call last):
+  File "/Users/a.herrera.zurita/Desktop/rasa_core-master/usecases/repsol/rest.py", line 103, in hello
+    logger.info("req", content)
+  File "/anaconda2/lib/python2.7/site-packages/ACNLogger/__init__.py", line 27, in info
+    self.logger.info(("["+session+"]  ["+self._service_name+"]  [INFO]  "+message).decode('utf8'))
+TypeError: coercing to Unicode: need string or buffer, dict found
+
+[2018-05-15 14:43:17,331+0200]  [UNDEFINED]  [Rasa]  [INFO]  STARTING MICROSERVICE
+[2018-05-15 14:43:25,606+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-15 14:43:25,607+0200]  [1234678]  [Rasa]  [ERROR]  NameError  global name 'json' is not defined
+[2018-05-15 14:43:25,608+0200]  [1234678]  [Rasa]  [DEBUG]  
+Traceback (most recent call last):
+  File "/Users/a.herrera.zurita/Desktop/rasa_core-master/usecases/repsol/rest.py", line 104, in hello
+    logger.info(session, "Received user message with input: " + json.dumps(content))
+NameError: global name 'json' is not defined
+
+[2018-05-15 14:44:12,466+0200]  [UNDEFINED]  [Rasa]  [INFO]  STARTING MICROSERVICE
+[2018-05-15 14:44:28,257+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-15 14:44:28,259+0200]  [1234678]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "1234678", "intent": "greet"}
+[2018-05-15 14:44:28,259+0200]  [1234678]  [Rasa]  [INFO]  Processed to RASA format: _greet[session=1234678]
+[2018-05-15 15:42:15,168+0200]  [UNDEFINED]  [Rasa]  [INFO]  STARTING MICROSERVICE
+[2018-05-15 15:42:43,434+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-15 15:42:43,436+0200]  [1234678]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "1234678", "intent": "greet"}
+[2018-05-15 15:42:43,436+0200]  [1234678]  [Rasa]  [INFO]  Processed to RASA format: _greet[session=1234678]
+[2018-05-15 15:42:43,514+0200]  [1234678]  [Rasa]  [ERROR]  AttributeError  'dict' object has no attribute 'encode'
+[2018-05-15 15:42:43,514+0200]  [1234678]  [Rasa]  [DEBUG]  
+Traceback (most recent call last):
+  File "/Users/a.herrera.zurita/Desktop/rasa_core-master/usecases/repsol/rest.py", line 110, in hello
+    answer_encoded = answer[0].encode('utf8')
+AttributeError: 'dict' object has no attribute 'encode'
+
+[2018-05-15 15:49:43,557+0200]  [UNDEFINED]  [Rasa]  [INFO]  STARTING MICROSERVICE
+[2018-05-15 15:49:53,389+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-15 15:49:53,392+0200]  [1234678]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "1234678", "intent": "greet"}
+[2018-05-15 15:49:53,392+0200]  [1234678]  [Rasa]  [INFO]  Processed to RASA format: _greet[session=1234678]
+[2018-05-15 15:49:53,544+0200]  [1234678]  [Rasa]  [ERROR]  AttributeError  'dict' object has no attribute 'encode'
+[2018-05-15 15:49:53,546+0200]  [1234678]  [Rasa]  [DEBUG]  
+Traceback (most recent call last):
+  File "/Users/a.herrera.zurita/Desktop/rasa_core-master/usecases/repsol/rest.py", line 110, in hello
+    answer_encoded = answer[0].encode('utf8')
+AttributeError: 'dict' object has no attribute 'encode'
+
+[2018-05-15 15:51:42,457+0200]  [UNDEFINED]  [Rasa]  [INFO]  STARTING MICROSERVICE
+[2018-05-15 15:51:52,405+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-15 15:51:52,412+0200]  [1234678]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "1234678", "intent": "greet"}
+[2018-05-15 15:51:52,412+0200]  [1234678]  [Rasa]  [INFO]  Processed to RASA format: _greet[session=1234678]
+[2018-05-15 15:54:15,344+0200]  [UNDEFINED]  [Rasa]  [INFO]  STARTING MICROSERVICE
+[2018-05-15 15:54:26,239+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-15 15:54:26,240+0200]  [1234678]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "1234678", "intent": "greet"}
+[2018-05-15 15:54:26,240+0200]  [1234678]  [Rasa]  [INFO]  Processed to RASA format: _greet[session=1234678]
+[2018-05-15 15:54:26,365+0200]  [1234678]  [Rasa]  [ERROR]  ValueError  No JSON object could be decoded
+[2018-05-15 15:54:26,366+0200]  [1234678]  [Rasa]  [INFO]  
+Traceback (most recent call last):
+  File "/Users/a.herrera.zurita/Desktop/rasa_core-master/usecases/repsol/rest.py", line 111, in hello
+    answer = json.loads(answer)
+  File "/anaconda2/lib/python2.7/json/__init__.py", line 339, in loads
+    return _default_decoder.decode(s)
+  File "/anaconda2/lib/python2.7/json/decoder.py", line 364, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/anaconda2/lib/python2.7/json/decoder.py", line 382, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+
+[2018-05-15 15:56:20,354+0200]  [UNDEFINED]  [Rasa]  [INFO]  STARTING MICROSERVICE
+[2018-05-15 15:56:40,967+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-15 15:56:40,968+0200]  [1234678]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "1234678", "intent": "greet"}
+[2018-05-15 15:56:40,968+0200]  [1234678]  [Rasa]  [INFO]  Processed to RASA format: _greet[session=1234678]
+[2018-05-15 15:57:09,060+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-15 15:57:09,062+0200]  [1234678]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "1234678", "intent": "modifyCharge"}
+[2018-05-15 15:57:09,062+0200]  [1234678]  [Rasa]  [INFO]  Processed to RASA format: _modifycharge[]
+[2018-05-15 15:58:15,060+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-15 15:58:15,072+0200]  [1234678]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "1234678", "intent": "bajaDevolucionConfirmacion"}
+[2018-05-15 15:58:15,073+0200]  [1234678]  [Rasa]  [INFO]  Processed to RASA format: _bajadevolucionconfirmacion[]
+[2018-05-15 15:59:03,306+0200]  [UNDEFINED]  [Rasa]  [INFO]  STARTING MICROSERVICE
+[2018-05-15 15:59:14,913+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-15 15:59:14,916+0200]  [1234678]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "1234678", "intent": "bajaDevolucionConfirmacion"}
+[2018-05-15 15:59:14,916+0200]  [1234678]  [Rasa]  [INFO]  Processed to RASA format: _bajadevolucionconfirmacion[]
+[2018-05-15 15:59:26,712+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-15 15:59:26,713+0200]  [1234678]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "1234678", "intent": "modifyCharge"}
+[2018-05-15 15:59:26,713+0200]  [1234678]  [Rasa]  [INFO]  Processed to RASA format: _modifycharge[]
+[2018-05-15 16:00:43,596+0200]  [UNDEFINED]  [Rasa]  [INFO]  STARTING MICROSERVICE
+[2018-05-15 16:00:50,491+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-15 16:00:50,492+0200]  [1234678]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "1234678", "intent": "modifyCharge"}
+[2018-05-15 16:00:50,492+0200]  [1234678]  [Rasa]  [INFO]  Processed to RASA format: _modifycharge[]
+[2018-05-15 16:00:57,960+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-15 16:00:57,961+0200]  [1234678]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "1234678", "intent": "modifycharge"}
+[2018-05-15 16:00:57,961+0200]  [1234678]  [Rasa]  [INFO]  Processed to RASA format: _modifycharge[]
+[2018-05-15 16:01:22,720+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-15 16:01:22,723+0200]  [1234678]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "1234678", "intent": "greet"}
+[2018-05-15 16:01:22,723+0200]  [1234678]  [Rasa]  [INFO]  Processed to RASA format: _greet[session=1234678]
+[2018-05-15 16:01:30,118+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-15 16:01:30,121+0200]  [12346784]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "12346784", "intent": "greet"}
+[2018-05-15 16:01:30,121+0200]  [12346784]  [Rasa]  [INFO]  Processed to RASA format: _greet[session=12346784]
+[2018-05-15 16:01:37,541+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-15 16:01:37,541+0200]  [12346784]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "12346784", "intent": "modifycharge"}
+[2018-05-15 16:01:37,542+0200]  [12346784]  [Rasa]  [INFO]  Processed to RASA format: _modifycharge[]
+[2018-05-15 16:03:46,525+0200]  [UNDEFINED]  [Rasa]  [INFO]  STARTING MICROSERVICE
+[2018-05-15 16:03:54,768+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-15 16:03:54,769+0200]  [12346784]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "12346784", "intent": "modifycharge"}
+[2018-05-15 16:03:54,769+0200]  [12346784]  [Rasa]  [INFO]  Processed to RASA format: _modifycharge[]
+[2018-05-15 16:03:59,552+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-15 16:03:59,553+0200]  [12346784]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "12346784", "intent": "modifycharge"}
+[2018-05-15 16:03:59,553+0200]  [12346784]  [Rasa]  [INFO]  Processed to RASA format: _modifycharge[]
+[2018-05-15 16:04:00,613+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-15 16:04:00,614+0200]  [12346784]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "12346784", "intent": "modifycharge"}
+[2018-05-15 16:04:00,614+0200]  [12346784]  [Rasa]  [INFO]  Processed to RASA format: _modifycharge[]
+[2018-05-15 16:04:01,709+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-15 16:04:01,710+0200]  [12346784]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "12346784", "intent": "modifycharge"}
+[2018-05-15 16:04:01,710+0200]  [12346784]  [Rasa]  [INFO]  Processed to RASA format: _modifycharge[]
+[2018-05-15 16:07:24,260+0200]  [UNDEFINED]  [Rasa]  [INFO]  STARTING MICROSERVICE
+[2018-05-15 16:07:46,206+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-15 16:07:46,208+0200]  [12346784]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "12346784", "intent": "modifycharge"}
+[2018-05-15 16:07:46,208+0200]  [12346784]  [Rasa]  [INFO]  Processed to RASA format: _modifycharge[]
+[2018-05-15 16:07:54,028+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-15 16:07:54,031+0200]  [12346784]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "12346784", "intent": "greet"}
+[2018-05-15 16:07:54,032+0200]  [12346784]  [Rasa]  [INFO]  Processed to RASA format: _greet[session=12346784]
+[2018-05-15 16:07:57,003+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-15 16:07:57,005+0200]  [12346784]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "12346784", "intent": "greet"}
+[2018-05-15 16:07:57,006+0200]  [12346784]  [Rasa]  [INFO]  Processed to RASA format: _greet[session=12346784]
+[2018-05-15 16:08:04,535+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-15 16:08:04,537+0200]  [1234678]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "1234678", "intent": "greet"}
+[2018-05-15 16:08:04,537+0200]  [1234678]  [Rasa]  [INFO]  Processed to RASA format: _greet[session=1234678]
+[2018-05-15 16:08:44,261+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-15 16:08:44,265+0200]  [1234678]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "1234678", "intent": "goodbye"}
+[2018-05-15 16:08:44,267+0200]  [1234678]  [Rasa]  [INFO]  Processed to RASA format: _goodbye[]
+[2018-05-15 16:17:51,966+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-15 16:17:51,983+0200]  [1234678]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "1234678", "intent": "greet"}
+[2018-05-15 16:17:51,983+0200]  [1234678]  [Rasa]  [INFO]  Processed to RASA format: _greet[session=1234678]
+[2018-05-15 16:19:33,496+0200]  [UNDEFINED]  [Rasa]  [INFO]  STARTING MICROSERVICE
+[2018-05-15 16:19:44,607+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-15 16:19:44,607+0200]  [1234678]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "1234678", "intent": "greet"}
+[2018-05-15 16:19:44,608+0200]  [1234678]  [Rasa]  [INFO]  Processed to RASA format: _greet[session=1234678]
+[2018-05-15 16:19:54,231+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-15 16:19:54,234+0200]  [1234678]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "1234678", "intent": "modifycharge"}
+[2018-05-15 16:19:54,234+0200]  [1234678]  [Rasa]  [INFO]  Processed to RASA format: _modifycharge[]
+[2018-05-15 16:20:18,372+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-15 16:20:18,373+0200]  [1234678]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "1234678", "intent": "goodbye"}
+[2018-05-15 16:20:18,374+0200]  [1234678]  [Rasa]  [INFO]  Processed to RASA format: _goodbye[]
+[2018-05-15 16:25:36,544+0200]  [UNDEFINED]  [Rasa]  [INFO]  STARTING MICROSERVICE
+[2018-05-15 16:26:00,393+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-15 16:26:00,399+0200]  [1234678]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "1234678", "intent": "goodbye"}
+[2018-05-15 16:26:00,399+0200]  [1234678]  [Rasa]  [INFO]  Processed to RASA format: _goodbye[]
+[2018-05-15 16:26:00,502+0200]  [1234678]  [Rasa]  [ERROR]  ValueError  BLANK RESPONSE FROM RASA!
+[2018-05-15 16:26:00,504+0200]  [1234678]  [Rasa]  [INFO]  
+Traceback (most recent call last):
+  File "/Users/a.herrera.zurita/Desktop/rasa_core-master/usecases/repsol/rest.py", line 117, in hello
+    raise ValueError('BLANK RESPONSE FROM RASA!')
+ValueError: BLANK RESPONSE FROM RASA!
+
+[2018-05-15 16:26:16,821+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-15 16:26:16,823+0200]  [1234678]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "1234678", "intent": "greet"}
+[2018-05-15 16:26:16,823+0200]  [1234678]  [Rasa]  [INFO]  Processed to RASA format: _greet[session=1234678]
+[2018-05-15 16:26:16,828+0200]  [1234678]  [Rasa]  [ERROR]  ValueError  BLANK RESPONSE FROM RASA!
+[2018-05-15 16:26:16,828+0200]  [1234678]  [Rasa]  [INFO]  
+Traceback (most recent call last):
+  File "/Users/a.herrera.zurita/Desktop/rasa_core-master/usecases/repsol/rest.py", line 117, in hello
+    raise ValueError('BLANK RESPONSE FROM RASA!')
+ValueError: BLANK RESPONSE FROM RASA!
+
+[2018-05-15 16:27:27,382+0200]  [UNDEFINED]  [Rasa]  [INFO]  STARTING MICROSERVICE
+[2018-05-15 16:27:36,209+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-15 16:27:36,210+0200]  [1234678]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "1234678", "intent": "greet"}
+[2018-05-15 16:27:36,211+0200]  [1234678]  [Rasa]  [INFO]  Processed to RASA format: _greet[session=1234678]
+[2018-05-15 16:27:43,902+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-15 16:27:43,903+0200]  [1234678]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "1234678", "intent": "modifycharge"}
+[2018-05-15 16:27:43,903+0200]  [1234678]  [Rasa]  [INFO]  Processed to RASA format: _modifycharge[]
+[2018-05-15 16:27:51,218+0200]  [123234]  [Rasa]  [INFO]  123234
+[2018-05-15 16:27:51,219+0200]  [1234678]  [Rasa]  [INFO]  Received user message with input: {"entities": [], "session": "1234678", "intent": "goodbye"}
+[2018-05-15 16:27:51,219+0200]  [1234678]  [Rasa]  [INFO]  Processed to RASA format: _goodbye[]
