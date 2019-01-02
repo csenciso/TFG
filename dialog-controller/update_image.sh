@@ -2,7 +2,7 @@
 
 #Creo la imagen
 docker build -t dialog-controller .
-#docker run -p 0.0.0.0:8080:8080 dialog-controller
+docker run -p 8080:8080 dialog-controller
 
 #Taggeo la imagen para subirla al registro
 #docker tag dialog-controller @nameAKS.azurecr.io/dialog-controller:@version

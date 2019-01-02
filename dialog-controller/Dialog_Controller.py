@@ -8,17 +8,16 @@ from flask import request, Flask
 
 from util import Logger
 from Literals import Literals
-from src.luis.LUISController import get_answer_luis
-from src.rasa.RASAController import get_answer_rasa
-from src.context_handler.RedisContextHandler import RedisContextHandler
+from luis.LUISController import get_answer_luis
+from rasa.RASAController import get_answer_rasa
+from context_handler.RedisContextHandler import RedisContextHandler
 from util.response_utils import make_error_response, make_response
-
 
 reload(sys)
 sys.setdefaultencoding('utf8')
 
-app = Flask(__name__)
 
+app = Flask(__name__)
 
 
 @app.route('/api/login', methods=['POST'])
@@ -26,25 +25,24 @@ def login():
     try:
         content = request.json
         if content:
-            time_1 = datetime.now()
-            Logger.log("Entra en Login: " + str(time_1) + "\n\n")
-
             # Recoger la sesion del contenido
             session = content['session']
-            intent_redis_context_handler.save_field("greet", session)
+
+            intent = "greet"
+            entities = []
 
             # Coge la respuesta de RASA
-            answer = get_answer_rasa(session, "greet", [])
+            answer = get_answer_rasa(session, intent, entities)
 
             Logger.log("\nRASA dice " + str(answer) + "\n\n")
 
             # Guardo la conversacion en REDIs para tener un registro
             save_conversation(content, answer)
 
-            response = generate_answer(answer, "greet", session)
+            response = generate_answer(answer, intent, session)
 
             time_2 = datetime.now()
-            Logger.log("Sale de Login: " + str(time_2) + "\n\n")
+            Logger.log("Sale de GetAnswer: " + str(time_2) + "\n\n")
 
             return make_response(response, 200)
 
@@ -63,9 +61,6 @@ def get_answer():
     try:
         content = request.json
         if content:
-            time_1 = datetime.now()
-            Logger.log("Entra en GetAnswer: " + str(time_1) + "\n\n")
-
             # Recoger la sesion del contenido
             session = content['session']
 
@@ -100,7 +95,7 @@ def get_answer():
                 # Guardo la conversacion en REDIs para tener un registro
                 save_conversation(content, answer)
 
-                response = generate_answer(answer, intent, session, literal)
+                response = generate_answer(answer, intent, session, literal=literal)
 
             time_2 = datetime.now()
             Logger.log("Sale de GetAnswer: " + str(time_2) + "\n\n")
@@ -162,14 +157,12 @@ def save_conversation(content, answer):
     user_query = "//:user: " + question
     chatbot_response = "//:virtual_assistant:"
 
-    for response in answer['answer']:
-        chatbot_response = chatbot_response + " " + response['response']['transcript']
+    chatbot_response = chatbot_response + " " + answer['answer']['response']
 
     conversation = user_query + chatbot_response
     conversation_formatted = conversation.replace('\n', ' ')
 
-    prev_conversation = str(conversation_redis_context_handler.get_field(session))
-
+    prev_conversation = conversation_redis_context_handler.get_field(session)
     conversation_redis_context_handler.save_field(prev_conversation + " " + conversation_formatted, session)
 
 
@@ -180,5 +173,4 @@ if __name__ == "__main__":
     intent_redis_context_handler = RedisContextHandler("intent")
     username_redis_context_handler = RedisContextHandler("userName")
 
-    # app.run(debug=True, port=int(config.get('AICONTROLLER', 'PORT')))
     app.run(debug=True, host='0.0.0.0', port=8080)

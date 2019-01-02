@@ -7,6 +7,7 @@ from datetime import datetime
 
 from util import Logger
 
+
 def get_answer_rasa(session, intent, entities):
     time_1 = datetime.now()
     Logger.log("Entra en RASA DialogManager: " + str(time_1) + "\n\n")
