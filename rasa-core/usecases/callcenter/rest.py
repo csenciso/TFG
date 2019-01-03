@@ -169,7 +169,7 @@ class HttpInputComponent(object):
                 logging.error(e)
 
                 logging.debug("\n" + traceback.format_exc())
-                answer_exception = ["Internal server error"]
+                answer_exception = "Internal server error"
 
                 content = {
                     "session": session,

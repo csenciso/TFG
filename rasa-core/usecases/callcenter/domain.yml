@@ -37,7 +37,6 @@ entities:
   - type_of_pain
   - character
   - associated_symptoms
-  - duration
   - exacerbating_relieving_factor
   - severity
   - allergy
@@ -71,8 +70,6 @@ slots:
   character:
     type: text
   associated_symptoms:
-    type: text
-  duration:
     type: text
   exacerbating_relieving_factor:
     type: text

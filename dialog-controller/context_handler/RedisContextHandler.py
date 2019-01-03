@@ -2,17 +2,19 @@
 # -*- coding: utf-8 -*-
 
 import redis
+import ssl
 
 
 class RedisContextHandler:
 
     def __init__(self, namespace):
         self.namespace = namespace
+        context = ssl.create_default_context()
         self.redis = redis.StrictRedis(
             port=6380,
             db=0,
-            host="tfg-cristina.context_handler.cache.windows.net",
-            password="Rd8eWjpwm4Bt85Dfqk8nF4dpu1j5aNh1qyb+SgAGH68=",
+            host="tfg-cristina.redis.cache.windows.net",
+            password="CHdiaTs1UrnI1oYPZRgjsnYwqTey5GL4kKDZJkGoriM=",
             ssl=True
         )
 

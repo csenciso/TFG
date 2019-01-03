@@ -19,6 +19,12 @@ sys.setdefaultencoding('utf8')
 
 app = Flask(__name__)
 
+yes_no_intents = [
+    "evaluate_name",
+    "evaluate_character",
+    "evaluate_associated_symptoms"
+]
+
 
 @app.route('/api/login', methods=['POST'])
 def login():
@@ -82,10 +88,16 @@ def get_answer():
                 response = literal.get_token_error()
 
             else:
+                # Recoge los datos de LUIS
                 intent, entities = call_natural_language_service(content, previous_intent)
 
-                if entities['type'] == "user_name":
-                    username_redis_context_handler.save_field(entities['entity'], session)
+                for entity in entities:
+                    Logger.log(entity)
+                    if entity['type'] == "user_name":
+                        username_redis_context_handler.save_field(entity['entity'], session)
+
+                    if 'date' in entity['type'] and previous_intent in yes_no_intents:
+                        entity['type'] = "date"
 
                 # Coge la respuesta de RASA
                 answer = get_answer_rasa(session, intent, entities)
@@ -118,11 +130,18 @@ def call_natural_language_service(content, previous_intent):
 
     Logger.log("Previous Intent: " + previous_intent)
 
-    # Llamo a LUIS
-    intent, entities = get_answer_luis(question)
+    # Llamo a Microsoft LUIS
+    if previous_intent in yes_no_intents:
+        intent, entities = get_answer_luis(question, template="yes_no")
 
-    if intent == "deny":
-        intent = previous_intent + "_no"
+    else:
+        intent, entities = get_answer_luis(question)
+
+        if previous_intent == "evaluate_radiation":
+            previous_intent = "evaluate_associated_symptoms"
+
+        if intent == "deny":
+            intent = previous_intent + "_no"
 
     return intent, entities
 
@@ -142,7 +161,14 @@ def generate_answer(answer, intent_name, session, literal=None):
             "options": {}
         }
 
-    intent_name = intent_name.replace('_no', '')
+    if answer['answer']['next_intent'] == "evaluate_associated_symptoms":
+        intent_name = "evaluate_radiation"
+
+    elif answer['answer']['next_intent'] == "evaluate_exacerbating_relieving_factor":
+        intent_name = "evaluate_exacerbating_relieving_factor"
+
+    else:
+        intent_name = intent_name.replace('_no', '')
 
     intent_redis_context_handler.save_field(intent_name, session)
 
@@ -163,7 +189,12 @@ def save_conversation(content, answer):
     conversation_formatted = conversation.replace('\n', ' ')
 
     prev_conversation = conversation_redis_context_handler.get_field(session)
-    conversation_redis_context_handler.save_field(prev_conversation + " " + conversation_formatted, session)
+
+    if prev_conversation is None:
+        conversation_redis_context_handler.save_field(conversation_formatted, session)
+
+    else:
+        conversation_redis_context_handler.save_field(prev_conversation + " " + conversation_formatted, session)
 
 
 if __name__ == "__main__":
