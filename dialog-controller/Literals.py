@@ -13,8 +13,8 @@ class Literals:
             "session": self.session,
             "answer": [{
                 "intent": "backend_error",
-                "response": "Actualmente nuestros servicios no estan disponibles, para resolver su consulta "
-                            "llame al 912 345 678. Disculpe las molestias.",
+                "response": "Actualmente nuestros servicios no estan disponibles, para resolver su consulta. "
+                            "Disculpe las molestias.",
                 "next": ""
             }],
             "options": {}
@@ -26,7 +26,8 @@ class Literals:
             "session": self.session,
             "answer": [{
                 "intent": "backend_error",
-                "response": "La sesión ha expirado, para realizar otra consulta ponte en contacto en el 912 345 678",
+                "response": "La sesión ha expirado, para realizar otra consulta pongase en contacto con algun "
+                            "miembro del personal del hospital",
                 "next": ""
             }],
             "options": {}
@@ -38,7 +39,7 @@ class Literals:
             "session": self.session,
             "answer": [{
                 "intent": "finish",
-                "response": "Gracias por tu petición, para otra consulta llame al 912 345 678.",
+                "response": "Gracias por tu atención.",
                 "next": ""
             }],
             "options": {}

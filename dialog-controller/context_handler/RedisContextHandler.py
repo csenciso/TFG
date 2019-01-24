@@ -13,8 +13,8 @@ class RedisContextHandler:
         self.redis = redis.StrictRedis(
             port=6380,
             db=0,
-            host="tfg-cristina.redis.cache.windows.net",
-            password="CHdiaTs1UrnI1oYPZRgjsnYwqTey5GL4kKDZJkGoriM=",
+            host="tfgcristina.redis.cache.windows.net",
+            password="aKvi+IKiht4VhdVywM7Vx6PltnPHC6wput7KitIOHC0=",
             ssl=True
         )
 
